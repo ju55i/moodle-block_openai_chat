@@ -75,6 +75,7 @@ class chat extends \block_openai_chat\completion {
         $topp = $this->get_setting('topp', 1);
         $frequency = $this->get_setting('frequency', 1);
         $presence = $this->get_setting('presence', 1);
+        $apiurl = $this->get_setting('apiurl'); 
 
         $curlbody = [
             "model" => $this->model,
@@ -95,7 +96,7 @@ class chat extends \block_openai_chat\completion {
             ),
         ));
 
-        $response = $curl->post("https://api.openai.com/v1/chat/completions", json_encode($curlbody));
+        $response = $curl->post("$apiurl/v1/chat/completions", json_encode($curlbody));
         return $response;
     }
 }

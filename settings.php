@@ -32,6 +32,14 @@ $settings->add(new admin_setting_configcheckbox(
 ));
 
 $settings->add(new admin_setting_configtext(
+    'block_openai_chat/apiurl',
+    get_string('apiurl', 'block_openai_chat'),
+    get_string('apiurldesc', 'block_openai_chat'),
+    '',
+    PARAM_TEXT
+));
+
+$settings->add(new admin_setting_configtext(
     'block_openai_chat/apikey',
     get_string('apikey', 'block_openai_chat'),
     get_string('apikeydesc', 'block_openai_chat'),
