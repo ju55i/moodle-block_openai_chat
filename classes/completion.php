@@ -46,6 +46,7 @@ class completion {
      */
     public function __construct($model, $message, $history, $localsourceoftruth) {
         $this->apikey = get_config('block_openai_chat', 'apikey');
+        $this->apiurl = $this->get_setting('apiurl', get_string('defaultapiurl', 'block_openai_chat'));
         $this->prompt = $this->get_setting('prompt', get_string('defaultprompt', 'block_openai_chat'));
         $this->assistantname = $this->get_setting('assistantname', get_string('defaultassistantname', 'block_openai_chat'));
         $this->username = $this->get_setting('username', get_string('defaultusername', 'block_openai_chat'));

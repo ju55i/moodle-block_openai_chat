@@ -65,6 +65,7 @@ $string['config_sourceoftruth_help'] = "You can add information here that the AI
 $string['defaultprompt'] = "Below is a conversation between a user and a support assistant for a Moodle site, where users go for online learning:";
 $string['defaultassistantname'] = 'Assistant';
 $string['defaultusername'] = 'User';
+$string['defaultapiurl'] = 'https://api.openai.com';
 $string['askaquestion'] = 'Ask a question...';
 $string['apikeymissing'] = 'Please add your OpenAI API key to the global block settings.';
 $string['erroroccurred'] = 'An error occurred! Please try again later.';
