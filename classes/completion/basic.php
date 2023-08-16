@@ -84,6 +84,7 @@ class basic extends \block_openai_chat\completion {
             ),
         ));
 
+        $apiurl = $this->apiurl;
         $response = $curl->post("$apiurl/v1/engines/$this->model/completions", json_encode($curlbody));
         return $response;
     }
