@@ -32,10 +32,10 @@ $string['blocktitle'] = 'Block title';
 
 $string['restrictusage'] = 'Restrict chat usage to logged-in users';
 $string['restrictusagedesc'] = 'If this box is checked, only logged-in users will be able to use the chat box.';
-$string['apiurl'] = 'OpenAI API URL';
-$string['apiurldesc'] = 'The URL for accessing the OpenAI API';
-$string['apikey'] = 'OpenAI API Key';
-$string['apikeydesc'] = 'The API Key for your OpenAI account';
+$string['apiurl'] = 'Azure OpenAI deployment URL';
+$string['apiurldesc'] = 'The URL for accessing the OpenAI API deployment in Azure';
+$string['apikey'] = 'Azure OpenAI API Key';
+$string['apikeydesc'] = 'The API Key for your Azure OpenAI endpoint';
 $string['prompt'] = 'Completion prompt';
 $string['promptdesc'] = 'The prompt the AI will be given before the conversation transcript';
 $string['assistantname'] = 'Assistant name';
