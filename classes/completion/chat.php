@@ -84,13 +84,13 @@ class chat extends \block_openai_chat\completion {
         $curl = new \curl();
         $curl->setopt(array(
             'CURLOPT_HTTPHEADER' => array(
-                'Authorization: Bearer ' . $this->apikey,
+                'api-key: ' . $this->apikey,
                 'Content-Type: application/json'
             ),
         ));
 
         $apiurl = $this->apiurl;
-        $response = $curl->post("$apiurl/v1/chat/completions", json_encode($curlbody));
+        $response = $curl->post("$apiurl/completions?api-version=2023-05-15", json_encode($curlbody));
         return $response;
     }
 }
