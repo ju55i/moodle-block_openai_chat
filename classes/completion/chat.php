@@ -90,7 +90,7 @@ class chat extends \block_openai_chat\completion {
         ));
 
         $apiurl = $this->apiurl;
-        $response = $curl->post("$apiurl/chat/completions?api-version=2023-05-15", json_encode($curlbody));
+        $response = $curl->post("$apiurl/completions?api-version=2023-05-15", json_encode($curlbody));
         return $response;
     }
 }
